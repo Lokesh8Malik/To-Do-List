@@ -1,0 +1,16 @@
+{{#each todos as |t|}}
+            <li class="list">
+                <div class="content">{{t}}</div>
+                <div class="btnGroup">
+                    <a href="/increase?task={{t}}">
+                    <button class="upBtn">⬆️</button>
+                    </a>
+                    <a href="/decrease?task={{t}}">
+                    <button class="downBtn">⬇️</button>
+                    </a>
+                    <a href="/delete?task={{t}}">
+                    <button class="deleteBtn">❌</button>
+                    </a>
+                </div>
+            </li>
+            {{/each}}

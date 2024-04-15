@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{>style}}
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">To-Do List</div>
+        <form action="/addtask" method="GET">
+            <input type="text" class="inp" name="task" placeholder="Enter the task">
+            <button class="btn">Add Task</button>
+        </form>
+
+        <ul class="taskList">
+            {{>taskList t=t}}
+        </ul>
+    </div>
+</body>
+</html>
